@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sternback-Kaffeem&uuml;hle</title>
+    <link rel="stylesheet" type="text/css" href="sternback.css">
+    <link rel="stylesheet" type="text/css" href="formmitstil.css">
+  </head>
+  <body>
+
+    <h1>Sternback-Kaffeem&uuml;hle</h1>
+    <h2>F&uuml;llen Sie das Formular aus, und klicken Sie auf Bestellen,
+    um Ihre Bestellung abzuschicken</h2>
+
+<form action="http://sternback.oreilly.de/bestellung.php" method="post">
+    <div class="tabellenzeile">
+        <p>
+          W&auml;hlen Sie Ihre Bohnen:
+        </p>
+        <p>
+            <select name="kaffee">
+              <option value="House Blend">Hausmischung</option>
+              <option value="Bolivia">Bolivianischer Hochlandkaffee</option>
+              <option value="Guatemala">Guatemala – Biologischer Anbau</option>
+              <option value="Kenya">Kenia</option>
+            </select>
+        </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Typ: </p>
+        <p>
+            <input type="radio" name="gemahlen" value="nein"> Ungemahlen<br>
+            <input type="radio" name="gemahlen" value="ja" checked> Gemahlen
+        </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Anzahl Beutel: </p>
+        <p> <input type="number" name="beutel" min="1" max="10"> </p>
+    </div>
+    <div class="tabellenzeile label">
+        <p> Lieferdatum: </p>
+        <p> <input type="datum" name="datum"> </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Extras: </p>
+        <p>
+            <input type="checkbox" name="extras[]" value="geschenk"> Geschenkverpackung<br>
+            <input type="checkbox" name="extras[]" value="katalog" checked>
+            Katalog
+        </p>
+    </div>
+    <div class="tabellenzeile">
+        <p class="ueberschrift"> Liefern an</p>
+        <p></p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Name: </p>
+        <p> <input type="text" name="name" value=""> </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Adresse: </p>
+        <p> <input type="text" name="adresse" value=""> </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Stadt: </p>
+        <p> <input type="text" name="stadt" value=""> </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Land: </p>
+        <p> <input type="text" name="land" value=""> </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> PLZ: </p>
+        <p> <input type="text" name="plz" value=""> </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Telefon: </p>
+        <p> <input type="tel" name="tel" value=""> </p>
+    </div>
+    <div class="tabellenzeile">
+        <p> Kommentar: </p>
+        <p>
+            <textarea name="kommentare" rows="10" cols="48"></textarea>
+        </p>
+    </div>
+    <div class="tabellenzeile">
+        <p></p>
+        <p> <input type="submit" value="Bestellen"> </p>
+    </div>
+</form>
+  </body>
+</html>

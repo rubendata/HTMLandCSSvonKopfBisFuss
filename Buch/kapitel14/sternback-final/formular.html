@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sternback-Kaffeem&uuml;hle</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1> Sternback-Kaffeem&uuml;hle </h1>
+    <h2>F&uuml;llen Sie das Formular aus und klicken Sie auf Bestellen, um Ihre Bestellung abzuschicken </h2>
+      <form action="http://sternback.oreilly.de/bestellung.php" method="POST">
+       <p> 
+    W&auml;hlen Sie Ihren Kaffee:
+    <select name="kaffee">
+      <option value="hausmischung">Hausmischung</option>
+      <option value="bolivien">Bolivianischer Hochlandkaffee</option>
+      <option value="guatemala">Guatemala – Biologischer Anbau</option>
+      <option value="kenia">Kenia</option>
+    </select>
+  </p>
+  <p>Typ: <br>
+
+   <input type="radio" name="gemahlen" value="ja" checked>Gemahlen<br>
+   <input type="radio" name="gemahlen" value="nein">Ungemahlen
+
+</p>
+    <p>
+      Anzahl Beutel: <input type="number" name="beutel" min="1" max="10">
+    </p>
+    <p>
+      Lieferdatum: <input type="date" name="datum">
+    </p>
+
+  <p>
+    Extras: <br>
+    <input type="checkbox" name="extras[]" value="geschenk">Geschenkverpackung<br>
+    <input type="checkbox" name="extras[]" value="katalog" checked>Katalog
+  </p>
+ <p>Liefern an: <br>
+            Name: <input type="text" name="name"> <br>
+            Adresse: <input type="text" name="adresse"> <br>
+            Stadt: <input type="text" name="stadt"> <br>
+            Land: <input type="text" name="land"> <br>
+            PLZ: <input type="text" name="plz"> <br>
+            Telefon: <input type="tel" name="tel"> <br>
+        </p>
+   <p>Kommentar: <br>
+    <textarea name="kommentar"></textarea>
+  </p>
+         <p>
+            <input type="submit" value="Bestellen"> 
+        </p>
+
+      </form>
+  </body>
+</html>

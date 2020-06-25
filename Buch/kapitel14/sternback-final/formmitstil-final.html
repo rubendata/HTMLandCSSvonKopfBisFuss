@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sternback-Kaffeem&uuml;hle</title>
+    <link rel="stylesheet" type="text/css" href="sternback.css">
+    <link rel="stylesheet" type="text/css" href="formmitstil.css">
+  </head>
+  <body>
+
+    <h1>Sternback-Kaffeem&uuml;hle</h1>
+    <h2>F&uuml;llen Sie das Formular aus, und klicken Sie auf Bestellen,
+    um Ihre Bestellung abzuschicken</h2>
+
+<form action="http://sternback.oreilly.de/bestellung.php" method="post">
+	<fieldset>
+		<legend>Bestellung</legend>
+		<div class="tabellenzeile">
+			<label for="beans">
+		          W&auml;hlen Sie Ihre Bohnen:
+			</label>
+             <select name="kaffee">
+              <option value="House Blend">Hausmischung</option>
+              <option value="Bolivia">Bolivianischer Hochlandkaffee</option>
+              <option value="Guatemala">Guatemala – Biologischer Anbau</option>
+              <option value="Kenya">Kenia</option>
+            </select>
+ 		</div>
+		<div class="tabellenzeile">
+			<label>Typ:</label>
+        <p>
+            <input type="radio" id="gemahlen_nein" name="gemahlen" value="nein">
+					<label for="gemahlen_nein">Ungemahlen</label><br>
+            <input type="radio" id="gemahlen_ja" name="gemahlen" value="ja" checked> 
+            		<label for="gemahlen_ja">Gemahlen</label>
+        </p>
+		</div>
+		<div class="tabellenzeile">
+			<label for="bags">Anzahl Beutel:</label>
+			<input type="number" id="beutel" name="beutel" min="1" max="10">
+		</div>
+		<div class="tabellenzeile">
+			<label for="datum">Lieferdatum:</label>
+			<input type="datum" name="datum">
+		</div>
+		<div class="tabellenzeile">
+			<label>Extras:</label>
+			<p>
+            <input type="checkbox" id="geschenk" name="extras[]" value="geschenk"> 
+					<label for="geschenk">Geschenkverpackung</label><br>
+            <input type="checkbox" id="katalog" name="extras[]" value="katalog" checked>
+            		<label for="katalog">Katalog</label>
+			</p>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Liefern an</legend>
+		<div class="tabellenzeile">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" value="" placeholder="Buckaroo Banzai" required> 
+		</div>
+		<div class="tabellenzeile">
+			<label for="adresse">Adresse:</label>
+			<input type="text" id="adresse" name="adresse" value="" placeholder="Banzai Institute" required> 
+		</div>
+		<div class="tabellenzeile">
+			<label for="stadt">Stadt:</label>
+			<input type="text" id="stadt" name="stadt" value="" placeholder="Los Angeles" required> 
+		</div>
+		<div class="tabellenzeile">
+			<label for="land">State:</label>
+			<input type="text" id="land" name="land" value="" placeholder="USA" required>
+		</div>
+		<div class="tabellenzeile">
+			<label for="plz">PLZ:</label>
+			<input type="text" id="plz" name="plz" value="" placeholder="90050" required>
+		</div>
+		<div class="tabellenzeile">
+			<label for="tel">Telefon:</label>
+			<input type="tel" id="tel" name="tel" value="" placeholder="0123-555212" required>
+		</div>
+		<div class="tabellenzeile">
+			<label for="kommentare">Kommentar:</label>
+            <textarea id="kommentare" name="kommentare"></textarea>
+		</div>
+		<div class="tabellenzeile">
+			<label></label>
+			<input type="submit" value="Bestellen">
+		</div>
+	</fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  font-size:           small;
+  font-family:         Verdana, Helvetica, Arial, sans-serif;
+  line-height:         1.6em;
+}
+
+h1, h2 {
+  color:               #007e7e;
+}
+
+h1 {
+  font-size:           150%;
+}
+
+h2 {
+  font-size:           130%;
+}
+
+.garantie {
+  line-height:         1.9em;
+  font-style:          italic;
+  font-family:         Georgia, "Times New Roman", Times, serif;
+  color:               #444444;
+  border-color:        white;
+  border-width:        1px;
+  border-style:        dashed;
+  background-color:    #a7cece;
+  padding:             25px;
+  padding-left:        80px;
+  margin:              30px;
+  margin-right:        250px;
+  background-image:    url(bilder/hintergrund.gif);
+  background-repeat:   no-repeat;
+  background-position: top left;
+}
+
+#elixire {
+   border-width: thin;
+   border-style: solid;
+   border-color: #007e7e;
+   width: 200px;
+
+
+   padding-right: 20px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+
+   margin-left: 20px;
+
+   text-align: center;
+
+   background-image: url(bilder/cocktail.gif);
+   background-repeat: repeat-x;
+}
+
+#elixire h2 {
+    color: black;
+}
+
+#elixire h3 {      
+    color: #d12c47;
+}
+
+
+#elixire {
+    line-height: 1;
+}
+
+
+.cd {
+	font-style: italic;
+}
+
+.interpret {
+	font-weight: bold;
+}
+
+#elixire a:link { 
+    color: #007e7e;
+}
+
+#elixire a:visited { 
+    color: #333333;
+}
+
+#elixire a:hover { 
+    background: #f88396; 
+    color: #0d5353;
+}

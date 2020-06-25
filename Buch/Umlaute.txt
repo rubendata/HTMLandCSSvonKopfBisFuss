@@ -1,0 +1,66 @@
+UMLAUTE UND SONDERZEICHEN
+
+Je nachdem, wie Ihr Browser konfiguriert ist, kann es vorkommen, dass 
+beim Erstellen der Übungswebseiten aus diesem Buch Sonderzeichen (wie z.B. 
+Umlaute oder das Euro-Zeichen) nicht korrekt dargestellt werden. Das geht 
+auf ein Problem mit der sogenannten Zeichenkodierung zurück. Im Buch 
+empfehlen wir Ihnen, beim Speichern eines HTML-Dokuments die Option "UTF-8" 
+einzustellen, weil mit dieser Zeichenkodierung Sonderzeichen generell sehr 
+gut abgebildet werden. Es ist aber möglich, dass Ihr Browser eine andere 
+Zeichenkodierung (wie z.B. ISO 8859-1) erwartet und dementsprechend die 
+Sonderzeichen nicht korrekt anzeigen kann.
+
+Dieses Darstellungsproblem tritt allein deshalb auf, weil aus didaktischen 
+Gründen erst in Kapitel 6 erklärt wird, wie Sie die Zeichenkodierung im 
+HTML-Dokument festlegen. Ist diese Angabe vorhanden, verschwindet auch 
+das Darstellungsproblem von selbst - Sie müssen sich also keine Sorgen 
+machen, dass der Besucher einer Ihrer Websites die Sonderzeichen nicht 
+korrekt angezeigt bekommt.
+
+Falls Sie also bei der Bearbeitung der Kapitel 1 bis 5 Probleme mit der 
+Anzeige der Sonderzeichen haben, sollten Sie Ihrem Browser mitteilen, 
+welche Zeichenkodierung er verwenden soll. Das können Sie einzeln für die 
+gerade angezeigte Seite tun oder, indem Sie die Standard-Zeichenkodierung 
+ändern, die der Browser verwendet, wenn keine Zeichenkodierung angegeben 
+wurde. 
+
+Um die Zeichenkodierung für ein einzelnes Dokument festzulegen, rufen Sie die 
+Seite im Browser auf und passen Sie die Zeichenkodierung für diese Seite über 
+das Anwendungsmenü an:
+
+* Safari: Darstellung -> Textkodierung -> Unicode (UTF-8)
+
+* Firefox: Ansicht -> Zeichenkodierung -> Unicode (UTF-8)
+
+* Opera: Darstellung -> Zeichenkodierung -> Unicode->UTF-8
+
+* Chrome: Anzeigen -> Codierung -> Unicode (UTF-8)
+
+* Internet Explorer: Seite -> Codierung -> Unicode (UTF-8)
+
+Um die Zeichenkodierung global umzustellen, rufen Sie den jeweiligen 
+Einstellungen-Dialog auf und nehmen dort folgende Einstellungen vor:
+
+* Safari: Einstellungen -> Erweitert -> Standardcodierung -> Unicode (UTF-8)
+
+* Firefox: Einstellungen -> Inhalt -> Erweitert (unter Schriftarten & Farben) -> 
+Standard-Zeichenkodierung -> Unicode (UTF-8)
+
+* Opera: Einstellungen -> Allgemein -> Details (bei Sprache) -> utf-8 (unter 
+Zeichenkodierung für Seiten…)
+
+* Chrome: Geben Sie in die Adressleiste chrome://settings/ ein. Klicken Sie am 
+Ende der Seite auf Erweiterte Einstellungen einblenden, wählen Sie bei 
+Webinhalte Schrift und stellen Sie unten auf der Seite unter Codierung 
+Unicode (UTF-8) ein.
+
+Auch wenn es etwas kompliziert klingt: Das Problem mit dem Umlauten taucht nur 
+temporär auf. Sobald Sie - wie in Kapitel 6 beschrieben - die Zeichenkodierung 
+im HTML-Dokument angeben, löst es sich in Luft auf. 
+
+Der Beispielcode, den Sie in diesem Paket finden, umgeht dieses Problem 
+übrigens, indem er anstelle von Umlauten und anderen Sonderzeichen sogenannte 
+HTML-Entities benutzt (wie z.B. die Zeichenkombination &uuml; für "ü"). Das tun 
+wir hier nur, weil es schlicht keine andere Möglichkeit gibt, allen Browser-
+einstellungen Rechnung zu tragen. Sie brauchen das in Ihrem Code nicht zu tun, 
+weil sich das Problem, wie gesagt, ab Kapitel 6 erübrigt.
